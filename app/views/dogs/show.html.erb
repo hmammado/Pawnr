@@ -1,7 +1,6 @@
 <h1 class = "header"> My Name is <%= @dog.name %></h1>
 
   <div class = 'main-photo'>
-    <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"  alt="dog photo">
   </div>
 
   <div class = 'information'>
@@ -10,8 +9,10 @@
   </div>
 
   <div>
-    <%= @dog.price %>
+    <%= "#{@dog.price}€" %>
     <%= link_to "Book Me", new_dog_booking_path(@dog), class: "btn btn-primary"%>
   </div>
 
+  <%= cl_image_tag @dog.photo.key,
+        width: 400, height: 300, crop: :fill %>
 </div>
