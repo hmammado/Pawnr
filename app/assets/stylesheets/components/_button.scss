@@ -1,0 +1,61 @@
+ .btn-main{
+  color: white;
+  background-color: #4CA1A3;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 6px;
+  position: absolute;
+  right: 140px;
+  top: 415px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+ }
+
+ .btn-main:hover {
+  background-color: #A7D0CD;
+  color: white;
+}
+
+
+// <!-- search button -->
+// .hero__search-input-container, .hero__search-input-container--combined {
+//     border-radius: 29.5px 0px 0px 29.5px;
+//     display: flex;
+//     width: 100%;
+//     background-color: #FFF;
+//     overflow: hidden;
+//         flex-direction: row;
+//     padding: 0px 0px 0px 24px;
+// }
+
+
+// .hero-search-input {
+//     font-size: 18px;
+//     letter-spacing: 0px;
+//     line-height: 32px;
+//     padding: 14px 24px 14px 18px;
+//     font-family: "Proxima Soft", "Source Sans Pro", helvetica, sans-serif;
+//     font-weight: 500;
+//     order: 1;
+//     margin: 0;
+//     border: 0;
+//     width: 100%;
+//     color: #525961;
+// }
+
+// .hero__search-button, .hero__search-button:active, .hero__signup-button, .hero__signup-button:active {
+//     background-color: #4CA1A3;
+// }
+
+// .hero__search-button, .hero__search-button--combined {
+//     border: 0;
+//     padding: 0;
+//     border-radius: 0px 29.5px 29.5px 0px;
+//     padding: 14px 32px 14px 28px;
+//     line-height: 32px;
+//     font-family: "Proxima Soft", "Source Sans Pro", helvetica, sans-serif;
+//     font-weight: 500;
+//     font-size: 18px;
+//     color: #FFFFFF;
+//     letter-spacing: 0px;
+//     outline: none;
