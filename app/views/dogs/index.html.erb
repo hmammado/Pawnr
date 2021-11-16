@@ -1,0 +1,18 @@
+<h2> Show all dogs</h2>
+<div class = container >
+  <div class = row >
+    <% @dogs.each do |dog| %>
+      <ul>
+        <div class = header>
+          <li><%= dog.name %> </li>
+          <li><%= dog.age %> </li>
+        </div>
+        <div class = bottom>
+          <li><%= dog.description %> </li>
+          <li><%= dog.breed %> </li>
+          <li><%= dog.size %> </li>
+        </div>
+      </ul>
+    <% end %>
+  </div>
+</div>
