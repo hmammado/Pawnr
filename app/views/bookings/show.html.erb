@@ -1,3 +1,27 @@
-<h1><%= "Congrats, #{@booking.user.first_name}!" %></h1><br>
-<p><%= "Your booking with #{@booking.dog.name} from #{@booking.start_date} to #{@booking.end_date} has been made and is #{@booking.status}." %></p><br>
-<p><%= "You'll get an email soon after it has been accepted by the user with more details." %></p>
+<% flash[:notice] = "Your booking has been made and is pending confirmation" %>
+<div class="container">
+  <h4><%= "Booking with #{@booking.dog.name}" %></h4><br>
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Dog</th>
+      <th scope="col">Date</th>
+      <th scope="col">Status</th>
+      <th scope="col">Total price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @booking.dog.name %></td>
+      <td><%= "#{@booking.start_date} to #{@booking.end_date}"  %></td>
+      <td><%= @booking.status %></td>
+      <td><%= "#{@booking.total_price}€" %></td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
