@@ -1,6 +1,6 @@
 .navbar-pawnr {
   justify-content: space-between;
-  background: white;
+  background: #F7F6F2;
 }
 
 .navbar-pawnr .navbar-collapse {
@@ -8,7 +8,15 @@
 }
 
 .navbar-pawnr .navbar-brand img {
-  width: 40px;
+  width: 50px;
+}
+
+.navbar {
+  padding: 0rem 1.2rem;
+}
+
+.nav-item {
+  font-family: Helvetica;
 }
 
 h1 {

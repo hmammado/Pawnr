@@ -1,0 +1,26 @@
+.banner{
+  background-image: url('dogs.jpg');
+  background-size: cover;
+    background-position: center;
+    padding: 265px 0;
+    height: 100px;
+}
+
+.container h1 {
+  color: #F9F9F9;
+  font-size: 50px;
+  font-weight: bold;
+  // text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+}
+
+.container p {
+  color: #D1D9D9;
+  font-size: 20px;
+  font-weight: bold;
+  // text-shadow: 1px 1px 3px rgb(0 0 0 / 40%);
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  right: 140px;
+  top: 415px
+}
