@@ -1,18 +1,21 @@
 <h2> Show all dogs</h2>
+
 <div class = container >
   <div class = row >
     <% @dogs.each do |dog| %>
-      <ul>
-        <div class = header>
-          <li><%= dog.name %> </li>
-          <li><%= dog.age %> </li>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="Card image cap">
+        <div class= "card-body">
+          <div class ='main-info'>
+            <h4> <%= dog.name %></h4>
+             Age:<%= dog.age %>
+          </div>
+          <div class = 'extra-info'>
+            <%= dog.size %>
+            <%= link_to 'About Me', dog_path(dog), class:"btn btn-primary"  %>
+          </div>
         </div>
-        <div class = bottom>
-          <li><%= dog.description %> </li>
-          <li><%= dog.breed %> </li>
-          <li><%= dog.size %> </li>
-        </div>
-      </ul>
+    </div>
     <% end %>
   </div>
 </div>

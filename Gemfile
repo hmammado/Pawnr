@@ -6,6 +6,7 @@ ruby '2.7.4'
 #Added by me
 
 gem 'devise'
+gem 'faker'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.4', '>= 6.0.4.1'
