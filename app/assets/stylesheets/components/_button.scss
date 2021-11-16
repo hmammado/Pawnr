@@ -4,16 +4,18 @@
   text-align: center;
   padding: 10px 15px;
   border-radius: 6px;
-  position: absolute;
-  right: 140px;
-  top: 415px;
+
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 20px;
  }
 
  .btn-main:hover {
   background-color: #A7D0CD;
   color: white;
+  text-decoration: none;
 }
 
 
