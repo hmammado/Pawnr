@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+require "open-uri"
 require 'faker'
 
 User.destroy_all
@@ -43,7 +43,7 @@ User.create!(
     password: 'password'
   )
 
-  Dog.create!(
+  new_dog = Dog.create!(
     name: Faker::Creature::Dog.name,
     breed: Faker::Creature::Dog.breed,
     size: Faker::Creature::Dog.size,
@@ -52,4 +52,8 @@ User.create!(
     price: Faker::Number.within(range: 1..50),
     user: new_user
   )
+
+  file = URI.open('https://source.unsplash.com/400x300/?dog')
+  new_dog.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+  sleep 2
 end

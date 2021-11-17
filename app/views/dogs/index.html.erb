@@ -1,12 +1,11 @@
 <h2> Show all dogs</h2>
 
 <div class="main-container">
-
   <div class ="cards-container" >
     <div class ="cards">
       <% @dogs.each do |dog| %>
       <div class="card">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" alt="Card image cap">
+        <img class="card-img-top" src="<%= cl_image_path dog.photo.key %>" alt="Card image cap">
           <div class= "card-body">
             <div class ='main-info'>
               <h4> <%= dog.name %></h4>
@@ -20,6 +19,4 @@
     </div>
       <% end %>
   </div>
-
-
 </div>

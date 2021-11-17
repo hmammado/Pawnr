@@ -1,7 +1,9 @@
-<h1>Add a new booking</h1>
+<div class="form-container">
+  <h1>Create your doggy experience</h1>
 
-<%= simple_form_for [ @dog, @booking ] do |f| %>
-  <%= f.input :start_date, as: :date %>
-  <%= f.input :end_date, as: :date %>
-  <%= f.submit "Submit", class: "btn btn-primary" %>
-<% end %>
+  <%= simple_form_for [ @dog, @booking ] do |f| %>
+    <%= f.input :start_date, as: :date %>
+    <%= f.input :end_date, as: :date %>
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  <% end %>
+</div>
