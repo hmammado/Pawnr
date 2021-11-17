@@ -1,4 +1,7 @@
-<h2> Find your next Pawnr</h2>
+<div>
+  <h2> Find your next Pawnr</h2>
+  <%= link_to 'Add a pawnr', new_dog_path, class: "btn-main-add-pawnr"%>
+</div>
 
 <div class="main-container">
   <div class ="cards-container" >
@@ -23,7 +26,7 @@
     </div>
   </div>
    <div id="map"
-     style="width: 100%; height: 600px;"
+     style="width: 80%; height: 600px;"
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
      </div>

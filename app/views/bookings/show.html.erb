@@ -16,7 +16,7 @@
   <tbody>
     <tr>
       <td><%= @booking.dog.name %></td>
-      <td><%= "#{@booking.start_date} to #{@booking.end_date}"  %></td>
+      <td><%= "#{@booking.start_date.day}-#{@booking.start_date.month}-#{@booking.start_date.year} to #{@booking.end_date.day}-#{@booking.end_date.month}-#{@booking.end_date.year}"  %></td>
       <td><%= @booking.status %></td>
       <td><%= "#{@booking.total_price}€" %></td>
     </tr>

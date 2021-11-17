@@ -1,20 +1,31 @@
 <div class="form-container">
-  <h1>Share the puppy love</h1>
-    <%= simple_form_for [ @user, @dog ], html: {class: "grid"} do |f| %>
-      <div class="row">
-        <div class="col-6">
-          <%= f.input :name %>
+  <div class="form">
+    <h1>Share the puppy love</h1>
+      <%= simple_form_for [ @user, @dog ], html: {class: "grid"} do |f| %>
+        <div class="row">
+          <div class="col-6">
+            <%= f.input :name %>
+          </div>
+          <div class="col-6">
+            <%= f.input :breed %>
+          </div>
         </div>
-        <div class="col-6">
-          <%= f.input :breed %>
+        <div class="row">
+          <div class="col-4">
+            <%= f.input :age %>
+          </div>
+          <div class="col-4">
+            <%= f.input :size %>
+          </div>
+          <div class="col-4">
+            <%= f.input :price %>
+          </div>
         </div>
-      </div>
-      <%= f.input :age %>
-      <%= f.input :size %>
-      <%= f.input :address %>
-      <%= f.input :description, as: :text %>
-      <%= f.input :price %>
-      <%= f.input :photo, as: :file %>
-      <%= f.submit "Submit", class: "btn btn-primary" %>
-    <% end %>
+        <%= f.input :address %>
+        <%= f.input :description, as: :text %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit "Submit", class: "btn-main" %>
+      <% end %>
+    </div>
+  <img src="https://images.pexels.com/photos/1390361/pexels-photo-1390361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Someone cuddling a dog">
 </div>

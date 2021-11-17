@@ -1,4 +1,11 @@
- .btn-main, .btn-main-index {
+ .btn-main {
+  margin-top: 20px;
+ }
+
+ .btn-main,
+ .btn-main-index,
+ .btn-main-add-pawnr,
+ .btn-main-show {
   color: white;
   background-color: #4CA1A3;
   text-align: center;
@@ -9,10 +16,30 @@
   font-size: 16px;
   display: inline-block;
   margin-top: 20px;
+  border: none
  }
 
- .btn-main:hover, .btn-main-index:hover {
+ .btn-main:hover,
+ .btn-main-index:hover,
+ .btn-main-add-pawnr:hover,
+ .btn-main-show:hover {
   background-color: #A7D0CD;
   color: white;
   text-decoration: none;
+}
+
+.btn-main-add-pawnr {
+  float: right;
+  margin: 0px 15px;
+  width: 160px;
+  margin-top: 1px;
+  margin-right: 2px;
+  position:absolute;
+  top: 95px;
+  right: 20px;
+}
+
+.btn-main-show {
+  width: 160px;
+  margin-right: 2px;
 }
