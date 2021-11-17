@@ -26,9 +26,11 @@
   display: flex;
 }
 
-.cards-container #map {
+ #map {
   height: 100vh;
   position: sticky;
   top: 0;
+  width: 100%;
+  object-fit: cover;
   // padding: 0px 0px 0px 20px;
 }
