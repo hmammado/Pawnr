@@ -1,11 +1,13 @@
 .card {
   margin: 20px;
+  border-radius: 4px;
 }
 
 .main-info {
   display: flex ;
   justify-content: space-between;
   align-items: center;
+  color: rgb(64, 67, 71);
 }
 
 .extra-info {
@@ -19,16 +21,26 @@
 }
 
 .price {
-  font-size: 20px;
+  font-size: 19px;
+  color: rgb(64, 67, 71);
 }
 
 .main-container {
   display: flex;
 }
 
-.cards-container #map {
+ #map {
   height: 100vh;
   position: sticky;
   top: 0;
-  // padding: 0px 0px 0px 20px;
+  width: 100%;
+  object-fit: cover;
+  margin: 20px 9px 20px 0px;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(64, 67, 71);
+  margin-right: 4px;
 }
