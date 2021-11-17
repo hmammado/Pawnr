@@ -1,6 +1,5 @@
 <div class="form-container">
   <h1>Share the puppy love</h1>
-  <%# <div class="grid"> %>
     <%= simple_form_for [ @user, @dog ], html: {class: "grid"} do |f| %>
       <div class="row">
         <div class="col-6">
@@ -12,10 +11,10 @@
       </div>
       <%= f.input :age %>
       <%= f.input :size %>
+      <%= f.input :address %>
       <%= f.input :description, as: :text %>
       <%= f.input :price %>
       <%= f.input :photo, as: :file %>
       <%= f.submit "Submit", class: "btn btn-primary" %>
     <% end %>
-  <%# </div> %>
 </div>

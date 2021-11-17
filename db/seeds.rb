@@ -50,6 +50,7 @@ User.create!(
     age: Faker::Number.between(from: 1, to: 16),
     description: Faker::Creature::Dog.meme_phrase,
     price: Faker::Number.within(range: 1..50),
+    address: Faker::Address.city,
     user: new_user
   )
 
