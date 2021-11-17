@@ -51,11 +51,11 @@ h3 {
   top: -55px;
 }
 
-.card {
-      margin: 20px;
-    width: 250px;
-    position: absolute;
-    top: -55px;
+.card-testimonial {
+  margin: 20px;
+  width: 250px;
+  position: absolute;
+  top: -55px;
   box-sizing: border-box;
   // position: relative;
   display: block;
@@ -63,4 +63,12 @@ h3 {
   background-color: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
+}
+
+// Card dog (index)
+
+.cards {
+  display: grid;
+  width: 50vw;
+  grid-template-columns: 1fr 1fr;
 }

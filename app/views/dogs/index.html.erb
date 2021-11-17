@@ -1,21 +1,22 @@
 <h2> Show all dogs</h2>
 
-<div class = container >
-  <div class = row >
-    <% @dogs.each do |dog| %>
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="<%= cl_image_path dog.photo.key %>"  alt="Card image cap">
-        <div class= "card-body">
-          <div class ='main-info'>
-            <h4> <%= dog.name %></h4>
-             Age:<%= dog.age %>
-          </div>
-          <div class = 'extra-info'>
-             <strong class='price' >€<%= dog.price %>/week</strong>
-            <%= link_to 'About Me', dog_path(dog), class:"btn btn-primary"  %>
-          </div>
-        </div>
+<div class="main-container">
+  <div class ="cards-container" >
+    <div class ="cards">
+      <% @dogs.each do |dog| %>
+      <div class="card">
+        <img class="card-img-top" src="<%= cl_image_path dog.photo.key %>" alt="Card image cap">
+          <div class= "card-body">
+            <div class ='main-info'>
+              <h4> <%= dog.name %></h4>
+              Age:<%= dog.age %>
+            </div>
+            <div class = 'extra-info'>
+              <strong class='price' >€<%= dog.price %>/week</strong>
+              <%= link_to 'About Me', dog_path(dog), class:"btn btn-primary"  %>
+            </div>
+      </div>
     </div>
-    <% end %>
+      <% end %>
   </div>
 </div>
