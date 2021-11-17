@@ -3,6 +3,10 @@
   border-radius: 4px;
 }
 
+.card-img-top {
+  border-radius: 4px 4px 0px 0px;
+}
+
 .main-info {
   display: flex ;
   justify-content: space-between;
