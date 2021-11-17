@@ -1,4 +1,4 @@
-<h2> Show all dogs</h2>
+<h2> Find your next Pawnr</h2>
 
 <div class="main-container">
   <div class ="cards-container" >
@@ -11,11 +11,11 @@
           <div class= "card-body">
             <div class ='main-info'>
               <h4> <%= dog.name %></h4>
-              Age:<%= dog.age %>
+              Age: <%= dog.age %>
             </div>
             <div class = 'extra-info'>
-              <strong class='price' >€<%= dog.price %>/week</strong>
-              <%= link_to 'About Me', dog_path(dog), class:"btn btn-primary"  %>
+              <strong class='price' ><%= dog.price %>€  /week</strong>
+              <%= link_to 'About Me', dog_path(dog), class:"btn-main-index"  %>
             </div>
           </div>
         </div>
