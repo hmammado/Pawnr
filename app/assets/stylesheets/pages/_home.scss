@@ -5,8 +5,9 @@ body {
   font-size: 18px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   font-family: Poppins;
+  color: #2B2B2B;
 }
 
 a {
@@ -16,5 +17,5 @@ a {
 h2 {
   width: 30%;
   margin: 0 auto;
-  color: #212121;
+  line-height: 3;
 }
