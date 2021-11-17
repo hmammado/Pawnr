@@ -8,24 +8,25 @@
     <div class= "right">
       <div class = "list-details">
         <ul class = 'details'>
-          <li>Breed: <%= @dog.breed%> </li>
-          <li>Size: <%= @dog.size%> </li>
-          <li>Gender: Female </li>
-          <li>Age: <%= @dog.age%></li>
+          <li><strong>Breed:</strong> <%= @dog.breed%> </li>
+          <li><strong>Size:</strong> <%= @dog.size%> </li>
+          <li><strong>Gender:</strong> Female </li>
+          <li><strong>Age:</strong> <%= @dog.age%></li>
         </ul>
       </div>
 
       <div class="book">
         <h4 class="price"><%= "#{@dog.price}€ / week" %></h4>
-        <%= link_to "Book Me", new_dog_booking_path(@dog), class: "btn-main"%>
+        <%= link_to "Meet me", new_dog_booking_path(@dog), class: "btn-main-show"%>
       </div>
 
     </div>
+
   </div>
 
 
 <div class="about-me">
   <h2> About Me </h2>
-  <p class = "dog-description"> Nolan is a beutiful dog very calm. She is a female and loves playing with other
-  dogs. She rarely barks and her favorite food is the bacon </p>
+  <p class = "dog-description"> <%=  "#{@dog.name} is a beautiful and very calm dog.
+  She loves playing with other dogs. She rarely barks and her favorite food is bacon"%> </p>
 </div>
