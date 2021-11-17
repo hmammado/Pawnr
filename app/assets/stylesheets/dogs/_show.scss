@@ -1,5 +1,32 @@
+.main-photo {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
 
-.main-photo img {
-  width: 300px;
-  height: 300px;
+.book {
+  margin-left: 200px;
+}
+
+.about-me {
+display: flex;
+justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.details {
+  list-style: none;
+  font-size: 20px;
+}
+
+.about-me {
+  width: 600px;
+  margin: 20px ;
+  display: flex;
+  flex-direction: column;
 }

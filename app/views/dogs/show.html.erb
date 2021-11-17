@@ -1,18 +1,31 @@
 <h1 class = "header"> My Name is <%= @dog.name %></h1>
 
   <div class = 'main-photo'>
+
+      <%= cl_image_tag @dog.photo.key,
+      width: 500, height: 300, crop: :fill %>
+
+    <div class= "right">
+      <div class = "list-details">
+        <ul class = 'details'>
+          <li>Breed: <%= @dog.breed%> </li>
+          <li>Size: <%= @dog.size%> </li>
+          <li>Gender: Female </li>
+          <li>Age: <%= @dog.age%></li>
+        </ul>
+      </div>
+
+      <div class="book">
+        <h4 class="price"><%= "#{@dog.price}€ / week" %></h4>
+        <%= link_to "Book Me", new_dog_booking_path(@dog), class: "btn-main"%>
+      </div>
+
+    </div>
   </div>
 
-  <div class = 'information'>
-    <h3><%= @dog.breed%> - <%= @dog.size%> </h3>
-    <p><%= @dog.description %></p>
-  </div>
 
-  <div>
-    <%= "#{@dog.price}€" %>
-    <%= link_to "Book Me", new_dog_booking_path(@dog), class: "btn btn-primary"%>
-  </div>
-
-  <%= cl_image_tag @dog.photo.key,
-        width: 400, height: 300, crop: :fill %>
+<div class="about-me">
+  <h2> About Me </h2>
+  <p class = "dog-description"> Nolan is a beutiful dog very calm. She is a female and loves playing with other
+  dogs. She rarely barks and her favorite food is the bacon </p>
 </div>
