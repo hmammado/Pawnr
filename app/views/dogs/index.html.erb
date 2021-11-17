@@ -1,26 +1,30 @@
 <h2> Show all dogs</h2>
 
 <div class="main-container">
-  <div class ="cards-container" >
-    <div class ="cards">
-      <% @dogs.each do |dog| %>
-        <div class="card">
-          <% if dog.photo.attached?  %>
-            <img class="card-img-top" src="<%= cl_image_path dog.photo.key %>" alt="Card image cap">
-          <% end %>
-          <div class= "card-body">
-            <div class ='main-info'>
-              <h4> <%= dog.name %></h4>
-              Age:<%= dog.age %>
-            </div>
-            <div class = 'extra-info'>
-              <strong class='price' >€<%= dog.price %>/week</strong>
-              <%= link_to 'About Me', dog_path(dog), class:"btn btn-primary"  %>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-  <img id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoiZGlhbmFiYXJyMTkiLCJhIjoiY2t2Y2Q1aWw5Nm81czJvczdtcWl6ZjA5eCJ9.ZDF3soo23VvAbEUC12AGCQ'>
+  <div class ="cards-container" >
+    <div class ="cards">
+      <% @dogs.each do |dog| %>
+        <div class="card">
+          <% if dog.photo.attached? %>
+            <img class="card-img-top" src="<%= cl_image_path dog.photo.key %>" alt="Card image cap">
+          <% end %>
+          <div class= "card-body">
+            <div class ='main-info'>
+              <h4> <%= dog.name %></h4>
+              Age:<%= dog.age %>
+            </div>
+            <div class = 'extra-info'>
+              <strong class='price' >€<%= dog.price %>/week</strong>
+              <%= link_to 'About Me', dog_path(dog), class: "btn-main-index" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+     </div>
 </div>
