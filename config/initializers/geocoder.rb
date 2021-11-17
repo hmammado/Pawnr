@@ -16,11 +16,6 @@ Geocoder.configure(
   # supports SocketError and Timeout::Error
   # always_raise: [],
 
-  Geocoder.configure(
-  # [...]
-    units: :km, # defaults to miles (:mi)
-  # [...]
-)
   # Calculation options
   # units: :mi,                 # :km for kilometers or :mi for miles
   # distances: :linear          # :spherical or :linear
