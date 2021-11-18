@@ -1,18 +1,20 @@
 class DogsController < ApplicationController
 
   def index
-    @dogs = Dog.all
+    @dogs = Dog.all.order(created_at: :asc)
 
     @markers = @dogs.geocoded.map do |dog|
       {
         lat: dog.latitude,
         lng: dog.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { dog: dog })
+        info_window: render_to_string(partial: "info_window", locals: { dog: dog }),
+        image_url: helpers.asset_url('huella.png')
       }
     end
   end
 
   def show
+    @booking = Booking.new
     @dog = Dog.find(params[:id])
   end
 
@@ -33,6 +35,6 @@ class DogsController < ApplicationController
   private
 
   def dog_params
-    params.require(:dog).permit(:name, :breed, :age, :size, :description, :price, :photo)
+    params.require(:dog).permit(:name, :breed, :age, :size, :description, :price, photos: [])
   end
 end

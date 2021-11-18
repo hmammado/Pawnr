@@ -4,26 +4,26 @@
       <%= simple_form_for [ @user, @dog ], html: {class: "grid"} do |f| %>
         <div class="row">
           <div class="col-6">
-            <%= f.input :name %>
+            <%= f.input :name, placeholder: "Nolan" %>
           </div>
           <div class="col-6">
-            <%= f.input :breed %>
+            <%= f.input :breed, placeholder: "American Staffordshire" %>
           </div>
         </div>
         <div class="row">
           <div class="col-4">
-            <%= f.input :age %>
+            <%= f.input :age, placeholder: "1" %>
           </div>
           <div class="col-4">
-            <%= f.input :size %>
+            <%= f.input :size, placeholder: "small" %>
           </div>
           <div class="col-4">
-            <%= f.input :price %>
+            <%= f.input :price, placeholder: "10" %>
           </div>
         </div>
-        <%= f.input :address %>
-        <%= f.input :description, as: :text %>
-        <%= f.input :photo, as: :file %>
+        <%= f.input :address, placeholder: "Carrer de Joaquim Ruyra, 9" %>
+        <%= f.input :description, as: :text, placeholder: "Playful dog, loves stealing other people's food" %>
+        <%= f.input :photos, as: :file, input_html: { multiple: true } %>
         <%= f.submit "Submit", class: "btn-main" %>
       <% end %>
     </div>

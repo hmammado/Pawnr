@@ -1,10 +1,15 @@
 .card {
   margin: 20px;
   border-radius: 4px;
+  height: 400px;
+  .background {
+    height: 80%;
+  }
 }
 
 .card-img-top {
   border-radius: 4px 4px 0px 0px;
+  height: 300px;
 }
 
 .main-info {
@@ -18,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -25,8 +31,8 @@
 }
 
 .price {
-  font-size: 19px;
-  color: rgb(64, 67, 71);
+  font-size: 22px;
+  color: #2B2B2B;
 }
 
 .main-container {
