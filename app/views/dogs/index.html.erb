@@ -9,10 +9,8 @@
       <% @dogs.each do |dog| %>
         <div class="card">
             <% if dog.photos.attached?  %>
-              <% dog.photos.each do |photo| %>
-                <div class="background" style = "background:url(<%=url_for(photo)%>); background-size: 100% 100%; ">
-                </div>
-              <% end %>
+              <div class="background" style = "background:url(<%=url_for(dog.photos.first)%>); background-size: 100% 100%; ">
+              </div>
             <% end %>
           <div class= "card-body">
             <div class ='main-info'>
