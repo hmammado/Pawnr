@@ -16,8 +16,14 @@
       </div>
 
       <div class="book">
-        <h4 class="price"><%= "#{@dog.price}€ / week" %></h4>
-        <%= link_to "Meet me", new_dog_booking_path(@dog), class: "btn-main-show"%>
+        <h1>Create your doggy experience</h1>
+          <h4 class="price"><%= "#{@dog.price}€ / day" %></h4>
+
+          <%= simple_form_for [ @dog, @booking ] do |f| %>
+            <%= f.input :start_date, as: :date, order: [:day, :month, :year] %>
+            <%= f.input :end_date, as: :date, order: [:day, :month, :year] %>
+            <%= f.submit "Submit", class: "btn-main" %>
+        <% end %>
       </div>
 
     </div>
