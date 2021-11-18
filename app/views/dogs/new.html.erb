@@ -23,7 +23,7 @@
         </div>
         <%= f.input :address, placeholder: "Carrer de Joaquim Ruyra, 9" %>
         <%= f.input :description, as: :text, placeholder: "Playful dog, loves stealing other people's food" %>
-        <%= f.input :photo, as: :file %>
+        <%= f.input :photos, as: :file, input_html: { multiple: true } %>
         <%= f.submit "Submit", class: "btn-main" %>
       <% end %>
     </div>
