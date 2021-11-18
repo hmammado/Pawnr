@@ -43,8 +43,6 @@ const initMapbox = () => {
       fitMapToMarkers(map, markers);
     })
 
-
-
   addMarkersToMap(map, markers);
   fitMapToMarkers(map, markers);
   }
