@@ -7,7 +7,8 @@ class DogsController < ApplicationController
       {
         lat: dog.latitude,
         lng: dog.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { dog: dog })
+        info_window: render_to_string(partial: "info_window", locals: { dog: dog }),
+        image_url: helpers.asset_url('huella.png')
       }
     end
   end
@@ -34,6 +35,6 @@ class DogsController < ApplicationController
   private
 
   def dog_params
-    params.require(:dog).permit(:name, :breed, :age, :size, :description, :price, :photo)
+    params.require(:dog).permit(:name, :breed, :age, :size, :description, :price, photos: [])
   end
 end
