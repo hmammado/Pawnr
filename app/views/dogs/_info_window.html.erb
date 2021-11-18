@@ -1,2 +1,5 @@
 <h2><%= dog.name %></h2>
 <p><%= dog.address %></p>
+<% dog.photos.each do |photo| %>
+  <%= cl_image_tag photo.key, class: "marker-image" %>
+<% end %>
