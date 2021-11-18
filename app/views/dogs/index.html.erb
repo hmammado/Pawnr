@@ -8,18 +8,19 @@
     <div class ="cards">
       <% @dogs.each do |dog| %>
         <div class="card">
-          <% if dog.photos.attached?  %>
-            <% dog.photos.each do |photo| %>
-              <img class="card-img-top" src="<%= cl_image_path photo.key %>" alt="Card image cap">
+            <% if dog.photos.attached?  %>
+              <% dog.photos.each do |photo| %>
+                <div class="background" style = "background:url(<%=url_for(photo)%>); background-size: 100% 100%; ">
+                </div>
+              <% end %>
             <% end %>
-          <% end %>
           <div class= "card-body">
             <div class ='main-info'>
               <h4> <%= dog.name %></h4>
               Age: <%= dog.age %>
             </div>
             <div class = 'extra-info'>
-              <strong class='price' ><%= dog.price %>€  /week</strong>
+              <strong class='price' ><%= dog.price %>€  /day</strong>
               <%= link_to 'About Me', dog_path(dog), class:"btn-main-index"  %>
             </div>
           </div>
