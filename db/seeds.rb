@@ -60,7 +60,7 @@ addresses.each do |address|
     user: new_user
   )
 
-  file = URI.open('https://source.unsplash.com/400x300/?dog')
+  file = URI.open('https://source.unsplash.com/800x600/?dog')
   new_dog.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   sleep 2
 end

@@ -1,7 +1,7 @@
 class DogsController < ApplicationController
 
   def index
-    @dogs = Dog.all
+    @dogs = Dog.all.order(created_at: :asc)
 
     @markers = @dogs.geocoded.map do |dog|
       {
