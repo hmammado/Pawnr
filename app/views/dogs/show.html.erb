@@ -1,9 +1,25 @@
 <h1 class = "header"> My Name is <%= @dog.name %></h1>
 
-  <div class = 'main-photo'>
-    <% @dog.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, height: 300, width: 500, crop: :fill %>
-    <% end %>
+   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <% @dog.photos.each do |photo| %>
+        <% if photo == @dog.photos.first %>
+            <div class="carousel-item active">
+                <%= cl_image_tag photo.key, crop: :fill, class:"d-block w-100"%>
+            </div>
+       <% else %>
+            <div class="carousel-item">
+              <%= cl_image_tag photo.key, crop: :fill, class:"d-block w-100"%>
+             </div>
+         <% end %>
+         <% end %>
+      </div>
+   </div>
+
+
+
+
+
 
 
     <div class= "right">
