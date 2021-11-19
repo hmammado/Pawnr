@@ -2,9 +2,16 @@
   margin: 20px;
   border-radius: 4px;
   height: 400px;
+
   .background {
     height: 80%;
+    color: #FBFBFB;
   }
+}
+
+.card:hover {
+  background-color: #F7F6F2;
+  text-decoration: none;
 }
 
 .card-img-top {
@@ -53,4 +60,5 @@ h4 {
   font-weight: 700;
   color: rgb(64, 67, 71);
   margin-right: 4px;
+  text-decoration: none;
 }
