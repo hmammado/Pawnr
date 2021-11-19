@@ -1,5 +1,5 @@
 .footer {
-  background: #CEE5D0;
+  background: #FEF9EF;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,4 +36,13 @@ footer{
 
 .footer-copyright {
   font-size: 16px;
+}
+
+.footer-image {
+  height: 353px;
+}
+
+.footer-image img {
+  height: 100%;
+  width: 100%;
 }
