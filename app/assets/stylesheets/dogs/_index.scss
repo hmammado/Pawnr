@@ -53,6 +53,7 @@
   width: 100%;
   object-fit: cover;
   margin: 20px 20px 20px 0px;
+  border-radius: 4px;
 }
 
 h4 {
@@ -69,4 +70,9 @@ h4 {
 
 .cards a:hover {
   text-decoration: none;
+}
+
+.mapboxgl-popup-content > h2, p {
+  position: center;
+
 }
