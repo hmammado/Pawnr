@@ -1,0 +1,29 @@
+.table-container {
+  margin: 50px;
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+
+#reject {
+  background-color: #C85C5C;
+  padding: 10px 45px !important;
+  margin-bottom: 50px;
+}
+
+#reject:hover {
+  background-color: #E05D5D;
+}
+
+#accept {
+  padding: 10px 45px !important;
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+.dashboard-table {
+  margin-bottom: 100px;
+}
+
+#button-td {
+  padding-top: 0;
+}

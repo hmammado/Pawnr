@@ -1,5 +1,5 @@
 class Booking < ApplicationRecord
-  enum status: [ :pending, :accepted, :declined ]
+  enum status: [ :pending, :accepted, :rejected ]
   before_create :set_total_price
   belongs_to :user
   belongs_to :dog

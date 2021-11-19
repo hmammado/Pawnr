@@ -11,7 +11,7 @@
 
 .card:hover {
   background-color: #F7F6F2;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .card-img-top {
@@ -24,6 +24,10 @@
   justify-content: space-between;
   align-items: center;
   color: rgb(64, 67, 71);
+
+  h4 {
+    margin: 0 !important;
+  }
 }
 
 .extra-info {
@@ -53,6 +57,7 @@
   width: 100%;
   object-fit: cover;
   margin: 20px 20px 20px 0px;
+  border-radius: 4px;
 }
 
 h4 {
@@ -61,4 +66,17 @@ h4 {
   color: rgb(64, 67, 71);
   margin-right: 4px;
   text-decoration: none;
+}
+
+.header-index h2 {
+  font-weight: bold;
+}
+
+.cards a:hover {
+  text-decoration: none;
+}
+
+.mapboxgl-popup-content > h2, p {
+  position: center;
+
 }

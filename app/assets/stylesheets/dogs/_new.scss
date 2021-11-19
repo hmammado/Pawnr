@@ -1,21 +1,51 @@
 .form-container {
   width: 100%;
-  margin-left: 50px;
+  padding-left: 50px;
   display: flex;
+  border-radius: 10px;
 }
 
-
-
-.form-container > h1 {
-  margin: 50px 0;
-}
+// .form-container > h1 {
+//   margin: 50px 0;
+//   margin-top: 50px;
+// }
 
 .form-container > img {
-  width: 90vh;
-  margin-left: 170px;
+  width: 35vw;
+  margin-left: 173px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px
+
 }
 
 .booking-container {
   width: 600px;
   margin: auto;
+  padding: 4;
+}
+
+.form > h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.btn-main-submit {
+  color: white;
+  background-color: #4CA1A3;
+  text-align: center;
+  padding: 10px 45px;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 11px;
+  border: none
+}
+
+.btn-main-submit:hover {
+  background-color: #A7D0CD;
+  color: white;
+  text-decoration: none;
 }
