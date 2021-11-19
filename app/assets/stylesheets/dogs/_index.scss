@@ -11,7 +11,7 @@
 
 .card:hover {
   background-color: #F7F6F2;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .card-img-top {
@@ -60,5 +60,13 @@ h4 {
   font-weight: 700;
   color: rgb(64, 67, 71);
   margin-right: 4px;
+  text-decoration: none;
+}
+
+.header-index h2 {
+  font-weight: bold;
+}
+
+.cards a:hover {
   text-decoration: none;
 }
