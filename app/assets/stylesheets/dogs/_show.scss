@@ -26,6 +26,7 @@
   justify-content: space-between;
   margin-left: 5px;
   margin-top: 50px;
+  min-width: 300px;
 }
 
 .details {
@@ -34,7 +35,7 @@
 }
 
 .about-me {
-  width: 750px;
+  width: 80vw;
   margin: 20px ;
   display: flex;
 }

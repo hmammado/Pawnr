@@ -47,9 +47,9 @@
 </div>
 
 
-  <div class="about-me">
-    <div class="description-details">
-      <h2> About Me </h2>
+  <div class="about-me mx-auto">
+    <div class="description-details col-8">
+      <h2 class="text-center"> About Me </h2>
       <p class = "dog-description"> <%= "#{@dog.name} is a beautiful and very calm dog.
           She loves playing with other dogs. She rarely barks and her favorite food is bacon"%></p>
    </div>
@@ -57,7 +57,7 @@
      <div class= "right">
         <div class = "list-details">
           <ul class = 'details'>
-            <li><strong>Breed:</strong> <%= @dog.breed%> </li>
+            <li class="d-flex"><strong class="mr-2">Breed: </strong> <%= @dog.breed%> </li>
             <li><strong>Size:</strong> <%= @dog.size%> </li>
             <li><strong>Gender:</strong> Female </li>
             <li><strong>Age:</strong> <%= @dog.age%></li>
