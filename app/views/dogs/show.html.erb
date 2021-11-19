@@ -5,6 +5,7 @@
       <%= cl_image_tag photo.key, height: 300, width: 500, crop: :fill %>
     <% end %>
 
+
     <div class= "right">
       <div class = "list-details">
         <ul class = 'details'>
@@ -32,7 +33,6 @@
 
 
 <div class="about-me">
-  <h2> About Me </h2>
-  <p class = "dog-description"> <%=  "#{@dog.name} is a beautiful and very calm dog.
-  She loves playing with other dogs. She rarely barks and her favorite food is bacon"%> </p>
+  <h2> About <%= @dog.name %> </h2>
+  <p class = "dog-description"> <%=  "#{@dog.description}  "%> </p>
 </div>

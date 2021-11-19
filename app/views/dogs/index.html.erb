@@ -16,10 +16,11 @@
             <div class= "card-body">
               <div class ='main-info'>
                 <h4> <%= dog.name %></h4>
+                  <div class='extra-info'>
+                    <span class='price' ><%= dog.price %>€  /day</span>
+                  </div>
               </div>
-              <div class='extra-info'>
-                <span class='price' ><%= dog.price %>€  /day</span>
-              </div>
+
             </div>
           </div>
         <% end %>
