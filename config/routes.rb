@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :dogs do
     resources :bookings, only: %i[new create]
   end
-  resources :bookings, only: %i[show]
+  resources :bookings, only: %i[show update]
   resource :dashboard
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

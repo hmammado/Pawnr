@@ -11,7 +11,7 @@
 
 .card:hover {
   background-color: #F7F6F2;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .card-img-top {
@@ -68,6 +68,15 @@ h4 {
   text-decoration: none;
 }
 
+.header-index h2 {
+  font-weight: bold;
+}
+
+.cards a:hover {
+  text-decoration: none;
+}
+
 .mapboxgl-popup-content > h2, p {
   position: center;
+
 }
