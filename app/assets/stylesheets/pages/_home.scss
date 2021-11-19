@@ -11,6 +11,8 @@ h1, h2, h4 {
   font-family: Poppins;
   color: #2B2B2B;
   text-decoration: none;
+  font-size: 2.5rem;
+  margin: 50px auto;
 }
 
 p {
@@ -22,12 +24,9 @@ a {
   color: #2B2B2B
 }
 
-h2 {
-  width: 30%;
-  margin: 0 auto;
-  line-height: 4;
-  font-family: 'Open Sans', sans-serif;
-}
+// h2 {
+//   font-family: 'Open Sans', sans-serif;
+// }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
