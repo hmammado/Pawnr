@@ -12,16 +12,16 @@
         </div>
         <div class="row">
           <div class="col-4">
-            <%= f.input :age, placeholder: "1" %>
+            <%= f.input :age %>
           </div>
           <div class="col-4">
             <%= f.input :size, as: :select,  collection: ["Small", "Medium", "Large", "Extra-Large"], placeholder: "small" %>
           </div>
           <div class="col-4">
-            <%= f.input :price, placeholder: "10" %>
+            <%= f.input :price %>
           </div>
         </div>
-        <%= f.input :address, placeholder: "Carrer de Joaquim Ruyra, 9" %>
+        <%= f.input :address, placeholder: "Carrer de Joaquim Ruyra, 9", id: "dog_address" %>
         <%= f.input :description, as: :text, placeholder: "Playful dog, loves stealing other people's food" %>
         <%= f.input :photos, as: :file, input_html: { multiple: true }  %>
         <%= f.submit "Submit", class: "btn-main" %>
