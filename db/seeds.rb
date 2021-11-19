@@ -34,11 +34,11 @@ User.create!(
   password: 'password'
 )
 
-# addresses = ["C. de Pere IV, 272, 08005 Barcelona", "Avinguda Diagonal, 3, 08019 Barcelona", "Carrer de Roc Boronat, 116, 126, 08018 Barcelona",
-#            "Carrer de Josep Pla, 69, 08019 Barcelona", "Carrer de Veneçuela, 78, 08019 Barcelona", "Carrer de Bac de Roda, 126, 08020 Barcelona",
-#           "C. de Pallars, 203, 08005 Barcelona", "Carrer de Lope de Vega, 112, 114, 08005 Barcelona", "Passeig Marítim de la Nova Icària, 38, 08005 Barcelona",
-#         "Rambla del Poblenou, 11, 08005 Barcelona", "Rambla del Poblenou, 57, 59, 08005 Barcelona", "Carrer de Badajoz, 44, 08005 Barcelona", "Carrer de Bac de Roda, 38, 08019 Barcelona",
-#         "Carrer de Fluvià, 43, 08019 Barcelona", "Carrer de Llull, 230, 08005 Barcelona", "Rambla de Prim, 146, 08019 Barcelona"]
+addresses = ["C. de Pere IV, 272, 08005 Barcelona", "Avinguda Diagonal, 3, 08019 Barcelona", "Carrer de Roc Boronat, 116, 126, 08018 Barcelona",
+           "Carrer de Josep Pla, 69, 08019 Barcelona", "Carrer de Veneçuela, 78, 08019 Barcelona", "Carrer de Bac de Roda, 126, 08020 Barcelona",
+          "C. de Pallars, 203, 08005 Barcelona", "Carrer de Lope de Vega, 112, 114, 08005 Barcelona", "Passeig Marítim de la Nova Icària, 38, 08005 Barcelona",
+        "Rambla del Poblenou, 11, 08005 Barcelona", "Rambla del Poblenou, 57, 59, 08005 Barcelona", "Carrer de Badajoz, 44, 08005 Barcelona", "Carrer de Bac de Roda, 38, 08019 Barcelona",
+        "Carrer de Fluvià, 43, 08019 Barcelona", "Carrer de Llull, 230, 08005 Barcelona", "Rambla de Prim, 146, 08019 Barcelona"]
 
 
   new_user = User.create!(
