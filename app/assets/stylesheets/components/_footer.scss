@@ -6,6 +6,7 @@
   height: 250px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
+  overflow: hidden;
 }
 .footer-links {
   display: flex;
@@ -40,9 +41,11 @@ footer{
 
 .footer-image {
   height: 353px;
+  margin-bottom: -75px;
 }
 
 .footer-image img {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
