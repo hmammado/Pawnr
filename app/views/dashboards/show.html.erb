@@ -1,0 +1,49 @@
+<h1>Your bookings</h1>
+<% @bookings.each do |booking|%>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Dog</th>
+          <th scope="col">Date</th>
+          <th scope="col">Status</th>
+          <th scope="col">Total price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= booking.dog.name %></td>
+          <td><%= "#{booking.start_date.day}-#{booking.start_date.month}-#{booking.start_date.year} to #{booking.end_date.day}-#{booking.end_date.month}-#{booking.end_date.year}"  %></td>
+          <td><%= booking.status %></td>
+          <td><%= "#{booking.total_price}€" %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<% end %>
+
+<% @my_doggies.each do |dog_booking| %>
+<h1><%= dog_booking.first.dog.name %></h1>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Dog</th>
+          <th scope="col">Date</th>
+          <th scope="col">Status</th>
+          <th scope="col">Total price</th>
+          <th scope="col">Accept/Reject</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= dog_booking.first.dog.name %></td>
+          <td><%= "#{dog_booking.first.start_date.day}-#{dog_booking.first.start_date.month}-#{dog_booking.first.start_date.year} to #{dog_booking.first.end_date.day}-#{dog_booking.first.end_date.month}-#{dog_booking.first.end_date.year}"  %></td>
+          <td><%= dog_booking.first.status %></td>
+          <td><%= "#{dog_booking.first.total_price}€" %></td>
+          <td><button class="btn-main">Accept</button><button class="btn-main">Reject</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<% end %>

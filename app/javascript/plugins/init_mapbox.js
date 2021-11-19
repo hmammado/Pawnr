@@ -9,7 +9,6 @@ const initMapbox = () => {
     markers.forEach(marker => bounds.extend([marker.lng, marker.lat]));
     map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 1000 });
   };
-  const markers = JSON.parse(mapElement.dataset.markers);
 
   const addMarkersToMap = (map, markers) => {
     markers.forEach((marker) => {
@@ -24,9 +23,9 @@ const initMapbox = () => {
       element.style.height = '25px';
 
       new mapboxgl.Marker(element)
-          .setLngLat([marker.lng, marker.lat])
-          .setPopup(popup) // add this
-          .addTo(map);
+      .setLngLat([marker.lng, marker.lat])
+      .setPopup(popup) // add this
+      .addTo(map);
 
     });
   };
@@ -38,6 +37,7 @@ const initMapbox = () => {
       style: 'mapbox://styles/mapbox/streets-v10'
     });
 
+    const markers = JSON.parse(mapElement.dataset.markers);
     window.addEventListener('load', () => {
       map.resize();
       fitMapToMarkers(map, markers);
