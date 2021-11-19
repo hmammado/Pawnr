@@ -5,26 +5,27 @@
 }
 
 .book {
-  margin-left: 317px;
   background-color: white;
   padding: 20px;
   width: 350px;
+  margin-left: 100px;
+  // margin-right: 50px ;
+  position: sticky;
+  border-radius: 4px;
 
   h1 {
     font-size: 20px;
     color: #404347;
   }
+
 }
 
-.about-me {
-display: flex;
-justify-content: flex-start;
-}
 
 .right {
   display: flex;
   justify-content: space-between;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-top: 50px;
 }
 
 .details {
@@ -33,10 +34,9 @@ justify-content: flex-start;
 }
 
 .about-me {
-  width: 522px;
+  width: 750px;
   margin: 20px ;
   display: flex;
-  flex-direction: column;
 }
 
 .dog-description {
@@ -45,8 +45,12 @@ justify-content: flex-start;
 
 
 
-#carouselExampleSlidesOnly {
-  width:400px;
+#carouselExampleIndicators {
+  width:600px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 4px;
+
 }
 .card .background {
   border-radius: 4px 4px 2px 2px;
@@ -54,4 +58,24 @@ justify-content: flex-start;
 
 .cards h4 {
   text-decoration: none;
+}
+
+
+.show-top {
+  display: flex;
+  // justify-content: flex-start;
+   align-items:center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.euro {
+  margin-top: 30px;
 }
